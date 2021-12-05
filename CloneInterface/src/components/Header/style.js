@@ -1,24 +1,21 @@
 import styled from "styled-components/native";
 
-export const Container = styled.SafeAreaView` 
-
-    flex-direction: row;
-    justify-content: space-around;
-    height: 100px;
-    align-items: center;
-    
-    
+export const Container = styled.SafeAreaView`
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 80px;
+  align-items: center;
 `;
 
 export const Logo = styled.Image.attrs({
-    resizeMode: 'contain'
+  resizeMode: "contain",
 })`
-    height: 150px; 
+  height: 160px;
 `;
 
-export const ActionButton = styled.TouchableOpacity` 
-
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+export const ActionButton = styled.TouchableOpacity`
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
 `;
