@@ -8,6 +8,15 @@ import New from "../components/New";
 import House from "../components/House";
 import Recommended from "../components/Recommended";
 
+//Instalações :
+//expo install expo-font @expo-google-fonts/montserrat
+//expo install @react-navigation/native
+//expo install @react-navigation/native-stack
+//expo install expo-app-loading
+//expo install react-native-screens react-native-safe-area-context
+//expo install react-native-swiper
+//expo install react-native-stars
+
 export default function Home() {
   const navigation = useNavigation();
 
