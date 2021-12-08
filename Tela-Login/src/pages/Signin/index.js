@@ -9,7 +9,9 @@ import {
 } from "./styles";
 import Header from "../../components/Header";
 
+
 function Signin() {
+
   return (
     <KeyboardView>
       <Header />
@@ -18,7 +20,7 @@ function Signin() {
         <Title>Login</Title>
         <Input placeholderTextColor="#fff" placeholder="E-mail" />
         <Input
-          placeholderTextColor="#fff"
+          placeholderTextColor="#fff" 
           placeholder="Senha"
           secureTextEntry
         />

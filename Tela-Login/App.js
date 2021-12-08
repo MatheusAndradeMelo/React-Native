@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import Signin from "./src/pages/Signin";  
+import Signin from "./src/pages/Signin"; 
+ 
 
 export default function App() {  
   return (
@@ -10,6 +11,6 @@ export default function App() {
     </> 
   );
 }
-
+ 
 //Adicionar biblioteca => yarn ou npm add styled-components
 
