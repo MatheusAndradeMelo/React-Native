@@ -9,12 +9,22 @@ const App = () => {
         <Text>Primeiro</Text>
       </View>
 
-      <View style={[styles.card, styles.content]}>
+      <View style={[styles.card, styles.screen1]}>
         <Text>Segundo</Text>
       </View>
 
-      <View style={[styles.card, styles.footer]}>
+      <View style={[styles.card, styles.screen2]}>
+        <Text>Segundo</Text>
+      </View>
+
+      <View style={[styles.card, styles.content]}>
         <Text>Terceiro</Text>
+      </View>
+
+      
+
+      <View style={[styles.card, styles.footer]}>
+        <Text>Quarto</Text>
       </View>
     </View>
   ); 
@@ -22,13 +32,29 @@ const App = () => {
 
 const styles = StyleSheet.create({
   header: {
-    height: 80,
+    height: 30,
     backgroundColor: "gray",
   },
 
   content: {
     height: 20,
     backgroundColor: "#555",
+  },
+  
+  screen1: {
+    backgroundColor: "#f4f4",
+    height: 100,
+    width:600,
+    flex:1, 
+    alignSelf: "flex-start",
+    
+  },
+  screen2: {
+    backgroundColor: "#d77",
+    height: 100,
+    width:600,
+    flex:1, 
+    alignSelf: "flex-end",
   },
 
   footer: {
