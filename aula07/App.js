@@ -20,7 +20,7 @@ const handleClick = async () => {;
   });
 
   // setLoading(false);
-  console.log("TERMINEI A FUNÇÃO");
+  console.log("TERMINEI A FUNÇÃO"); 
 };
 
   return (
