@@ -1,81 +1,92 @@
-import React from "react";
+import React from 'react';
+import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
 
-import { View, StyleSheet, Text } from "react-native";
-
-const App = () => {
+export default function Challenge() {
   return (
-    <View style={styles.container}>
-      <View style={[styles.card, styles.header]}>
-        <Text>Primeiro</Text>
+    <>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.primeiro} />
+      <View style={styles.primeiroSegundo} >
+      <View style={styles.segundo} />
+      <View style={styles.terceiro} />
       </View>
-
-      <View style={[styles.card, styles.screen1]}>
-        <Text>Segundo</Text>
+      <View style={styles.quartoQuinto}>
+      <View style={styles.quarto} />
+      <View style={styles.quinto} />
       </View>
-
-      <View style={[styles.card, styles.screen2]}>
-        <Text>Segundo</Text>
+      <View style={styles.sexto} />
+      <View style={styles.quadrados}>
+        <View style={styles.quadradin}/>
+        <View style={styles.quadradin}/>
+        <View style={styles.quadradin}/>
+        <View style={styles.quadradin}/>
+        <View style={styles.quadradin}/>
+        <View style={styles.quadradin}/>
       </View>
-
-      <View style={[styles.card, styles.content]}>
-        <Text>Terceiro</Text>
-      </View>
-
-      
-
-      <View style={[styles.card, styles.footer]}>
-        <Text>Quarto</Text>
-      </View>
-    </View>
-  ); 
-};
+    </SafeAreaView>
+    <View style={styles.tab} />
+    </>
+    
+  );
+}
 
 const styles = StyleSheet.create({
-  header: {
-    height: 30,
-    backgroundColor: "gray",
-  },
-
-  content: {
-    height: 20,
-    backgroundColor: "#555",
-  },
-  
-  screen1: {
-    backgroundColor: "#f4f4",
-    height: 100,
-    width:600,
-    flex:1, 
-    alignSelf: "flex-start",
-    
-  },
-  screen2: {
-    backgroundColor: "#d77",
-    height: 100,
-    width:600,
-    flex:1, 
-    alignSelf: "flex-end",
-  },
-
-  footer: {
-    height: 80,
-    backgroundColor: "#222",
-  },
-
   container: {
     flex: 1,
-    flexDirection: "column",
-    backgroundColor: "#fcfcfc",
-    alignItems: "center",
-    justifyContent: "space-between",
+    backgroundColor: '#f4f4f4f4'
   },
-
-  card: {
-    backgroundColor: "red",
-    alignItems: "center",
-    alignSelf: "stretch",
-    justifyContent: "center",
+  primeiro: {
+    backgroundColor: 'red',
+    height: 25
   },
+  primeiroSegundo: {
+    alignItems: 'center',
+    marginVertical: 18,
+  },
+  segundo: {
+    marginVertical: 18,
+    backgroundColor: 'red',
+    height: 85,
+    width: 85
+  },
+  terceiro: {
+    width: 150,
+    height: 35,
+    backgroundColor: '#000'
+  },
+  quartoQuinto: {
+    flexDirection: 'row',
+    marginTop: 20,
+  },
+  quarto: {
+    backgroundColor: 'red',
+    height: 80,
+    width: '50%'
+  },
+  quinto: {
+    backgroundColor: '#000',
+    height: 80,
+    width: '50%'
+  },
+  sexto: {
+    backgroundColor: '#666',
+    height: 10,
+    marginBottom: 10
+  },
+  quadrados: {
+    flexWrap: 'wrap',
+    flexDirection: 'row',
+    alignContent: 'space-around',
+    justifyContent: 'space-around',
+  },
+  quadradin: {
+    height: 92,
+    width: 94,
+    backgroundColor: '#000',
+    marginVertical: 15
+  },
+  tab: {
+    backgroundColor: '#000',
+    height: 50,
+  }
 });
-
-export default App;
